@@ -1,0 +1,33 @@
+.component-fridge {
+    width: 100%;
+    max-width: 600px;
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F3F2F2;
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        input {
+            width: 100%;
+        }
+
+        * {
+            width: max-content;
+        }
+    }
+
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+}
+
+.product-container {
+    padding: 10px;
+}

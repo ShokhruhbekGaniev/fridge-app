@@ -1,0 +1,96 @@
+.component-product {
+    position: relative;
+    background: #ffff;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+
+
+    &.expired {
+        color: #fff;
+        background: #000;
+
+        .edit-icon-container svg {
+            fill: #fff;
+
+            &:hover {
+                fill: #a0a0a0;
+            }
+        }
+    }
+
+    .mini-info-wrapper {
+        width: 90%;
+        padding-right: 10px;
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .price {
+            font-size: 16px;
+        }
+    }
+
+    .edit-icon-container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+
+        svg {
+            width: 15px;
+            height: 15px;
+
+            &:hover {
+                fill: #353bdc;
+            }
+        }
+    }
+
+    .times:hover {
+        color: #bbb;
+    }
+
+    div.img {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .info {
+        display: none;
+
+        .times {
+            width: max-content;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+
+    .info.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: rgb(70, 75, 236);
+        background: linear-gradient(170deg, rgba(70, 75, 236, 1) 70%, rgba(255, 255, 255, 1) 100%);
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: 10px;
+        border-radius: 7px;
+    }
+}

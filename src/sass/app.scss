@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "components/fridge";
+@import "components/product";
+@import "pages/Product/view";
+@import "pages/Product/edit";
+
+
+html,
+body,
+#app {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    padding: 30px;
+    overflow: auto;
+}
+
+button {
+    cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+        opacity: 0.5;
+    }
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
