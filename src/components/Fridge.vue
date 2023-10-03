@@ -7,7 +7,7 @@
                 block w-full p-2.5" placeholder="Посик... "
                v-model="searchValue"
             >
-            <div class="flex">
+            <div class="flex w-full overflow-hidden">
                 <button
                     class="bg-button-green hover:bg-button-green text-white py-1 px-3 rounded-2xl mt-2"
                     @click="createProduct()"
@@ -19,7 +19,7 @@
                     @click="deleteExpiredProduct()"
                     v-if="!anyExpiredProduct"
                 >
-                    Удалить все просроченные
+                    Удалить просроченные
                 </button>
             </div>
         </div>
